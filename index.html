@@ -11,19 +11,24 @@
     <title>TikTacToe</title>
   </head>
   <body class="body">
-      <h3 class="name">Tic Tac Toe</h3>
+      <h3 class="name"><b>Tic Tac Toe</b></h3>
+      <div class="player">
+      <h6>Player1: Black</h5>
+      <h6>Player2: Green</h5>
+      </div>
+
     <div class="tiktaktoe">
       <div class="col-sm-12">
-        <button onclick="show()">
+        <button onclick="box()">
           <canvas
             id="myCanvas">
             Your browser does not support the HTML canvas tag.
           </canvas>
         </button>
 
-        <button>
+        <button onclick="box1()">
           <canvas
-            id="myCanvas"
+            id="myCanvas1"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -31,9 +36,9 @@
             Your browser does not support the HTML canvas tag.
           </canvas>
         </button>
-        <button >
+        <button onclick="box2()">
           <canvas
-            id="myCanvas"
+            id="myCanvas2"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -44,9 +49,9 @@
       </div>
 
       <div class="col-sm-12">
-        <button>
+        <button onclick="box3()">
           <canvas
-            id="myCanvas"
+            id="myCanvas3"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -55,9 +60,9 @@
           </canvas>
         </button>
 
-        <button>
+        <button onclick="box4()">
           <canvas
-            id="myCanvas"
+            id="myCanvas4"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -65,9 +70,9 @@
             Your browser does not support the HTML canvas tag.
           </canvas>
         </button>
-        <button>
+        <button onclick="box5()">
           <canvas
-            id="myCanvas"
+            id="myCanvas5"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -77,9 +82,9 @@
         </button>
       </div>
       <div class="col-sm-12">
-        <button>
+        <button onclick="box6()">
           <canvas
-            id="myCanvas"
+            id="myCanvas6"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -88,9 +93,9 @@
           </canvas>
         </button>
 
-        <button>
+        <button onclick="box7()">
           <canvas
-            id="myCanvas"
+            id="myCanvas7"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -98,9 +103,9 @@
             Your browser does not support the HTML canvas tag.
           </canvas>
         </button>
-        <button>
+        <button onclick="box8()">
           <canvas
-            id="myCanvas"
+            id="myCanvas8"
             width="100"
             height="100"
             style="border: 1px solid #d3d3d3;"
@@ -109,6 +114,11 @@
           </canvas>
         </button>
       </div>
+    </div>
+
+
+    <div class="footer">
+      <h5>Developed by <a href="http://nahiduzzamanbadhon.me/"><b>Nahiduzzaman Badhon</b></a></h5>
     </div>
 
     <script src="home.js"></script>

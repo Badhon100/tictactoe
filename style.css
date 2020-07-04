@@ -1,3 +1,9 @@
+.player{
+    color: #d3d3d3;
+
+}
+
+
 #myCanvas{
     width:100px;
     height:100px;
@@ -13,10 +19,16 @@
 .body{
     background: orangered;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .tiktactoe{
     
     margin-top: 200px;
 }
+
+.footer{
+    color: wheat;
+    margin-top: 25px;
+}
+
