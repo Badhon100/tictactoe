@@ -1,31 +1,50 @@
+// variable declaration
+
 let player = 1;
 let check = [1, 1, 1, 1, 1, 1, 1, 1, 1];
-let player1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let player2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let player1 = [1, 20, 3, 4, 5, 6, 7, 8, 9];
+let player2 = [1, 20, 3, 4, 5, 6, 7, 8, 9];
 let playerCheck;
 let player1won = 0, player2won = 0;
 
+
+// function for identify player 1 and player 2
+// declaring player wise color
 
 
 function divide(id) {
     
   for (let i = 0; i < 9; i++) {
+    
+    
+    
     if (player == 1) {
       document.getElementById(id).style.background = "black";
+      result1();
+      if(player1won>0){
+        document.getElementById("result").innerHTML = "Player 1 won";
+      }
       playerCheck = 1;
       player++;
-      result1();
+      
     } else {
       document.getElementById(id).style.background = "green";
+      result2();
+      if(player2won>0){
+        document.getElementById("result").innerHTML = "Player 2 won";
+      }
       playerCheck = 2;
       player--;
-      result2();
+      
     }
   }
   
   
 
 }
+
+//color the box player wise
+// different function for different box
 
 function box() {
   while (check[0] == 1) {
@@ -145,27 +164,31 @@ function box8() {
   }
 }
 
+
+//calcutaing result to find out the winner
+//finding color box as tictactoe rule.
+
 function result1() {
-  if (player1[0] == player1[1] && player1[0] == player1[2]) {
+  if (player1[0] == player1[1] && player1[1] == player1[2]) {
     player1won++;
 
   }
-  if (player1[0] == player1[4] && player1[0] == player1[8]) {
+  if (player1[0] == player1[4] && player1[4] == player1[8]) {
     player1won++;
   }
-  if (player1[0] == player1[3] && player1[0] == player1[6]) {
+  if (player1[0] == player1[3] && player1[3] == player1[6]) {
     player1won++;
   }
-  if (player1[2] == player1[5] && player1[2] == player1[8]) {
+  if (player1[2] == player1[5] && player1[5] == player1[8]) {
     player1won++;
   }
-  if (player1[6] == player1[7] && player1[6] == player1[8]) {
+  if (player1[6] == player1[7] && player1[7] == player1[8]) {
     player1won++;
   }
-  if (player1[2] == player1[4] && player1[2] == player1[6]) {
+  if (player1[2] == player1[4] && player1[4] == player1[6]) {
     player1won++;
   }
-  if (player1[3] == player1[4] && player1[3] == player1[5]) {
+  if (player1[3] == player1[4] && player1[4] == player1[5]) {
     player1won++;
   }
 }
@@ -174,25 +197,25 @@ function result1() {
 
 
 function result2() {
-  if (player2[0] == player2[1] && player2[0] == player2[2]) {
+  if (player2[0] == player2[1] && player2[1] == player2[2]) {
     player2won++;
   }
-  if (player2[0] == player2[4] && player2[0] == player2[8]) {
+  if (player2[0] == player2[4] && player2[4] == player2[8]) {
     player2won++;
   }
-  if (player2[0] == player2[3] && player2[0] == player2[6]) {
+  if (player2[0] == player2[3] && player2[3] == player2[6]) {
     player2won++;
   }
-  if (player2[2] == player2[5] && player2[2] == player2[8]) {
+  if (player2[2] == player2[5] && player2[5] == player2[8]) {
     player2won++;
   }
-  if (player2[6] == player2[7] && player2[6] == player2[8]) {
+  if (player2[6] == player2[7] && player2[7] == player2[8]) {
     player2won++;
   }
-  if (player2[2] == player2[4] && player2[2] == player2[6]) {
+  if (player2[2] == player2[4] && player2[4] == player2[6]) {
     player2won++;
   }
-  if (player2[3] == player2[4] && player2[3] == player2[5]) {
+  if (player2[3] == player2[4] && player2[4] == player2[5]) {
     player2won++;
   }
 }
